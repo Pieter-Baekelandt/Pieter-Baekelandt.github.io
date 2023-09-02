@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #e6e9e6;
+}
+.page-container {
+  padding: 20px 0;
+  width: 100%;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+}
+
+.menu-container {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.menu {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.index, .about, .hobbies, .merch {
+
+}
+.header-container {
+  color: #061106;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.header {
+  width: 70%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header h1 {
+  font-size: 60px;
+}
+.content-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+.content-text {
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+}
+.content-text p {
+  padding-bottom: 10px;
+}
+.content-img {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flew-wrap: wrap;
+    width: 200px;
+    height: 300px;
+}
+a:link {
+  color: black;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: #3d6e3d;
+}
+a:active {
+  color: #3d6e3d;
+}
+.merch-form {
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 50%;
+  padding: 30px;
+  margin: 0 0 20px 0;
+}
+.form-row {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type='text'],
+.form-row input[type='email'] {
+  background-color: #FFFFFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+.form-row label {
+  margin-bottom: 15px;
+}
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  border: 1px solid #D6D9DC;
+  resize: none;
+}
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #7a7d76;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: #abadaa;
+}
+
+.form-row button:active {
+  background-color: #407FC7;
+}
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .page-container {
+    height: 900px;
+    margin: 0 auto;
+  }
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .form-row input[type='text'],
+  .form-row input[type='email'],
+  .form-row select,
+  .form-row textarea {
+    width: 250px;
+    height: initial;
+  }
+  .form-row label {
+    text-align: right;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
+  }
+
+  .form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+        resize: none;
+  }
+
+  .form-row .checkbox-label {
+    margin-left: 120px;
+    width: auto;
+  }
+  .form-row button {
+    margin-left: 120px;
+  }
+}
+}
